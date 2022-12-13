@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Face Recognizer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+    
+
+
+   <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h3 class="btn btn-default heading">Face recognizer App</h3>
+                <br><br>
+                <p style="font-size:22px;">The App is trained to identify These objects</p>
+                <b class="name_of_family_members">
+                    Me
+                    <hr>
+                    
+                    Father
+                    <hr>
+                    Mother
+                    <hr>
+                    Grandfather
+                    <hr>
+                    Grandmother
+                    <hr>
+                    <br><br>
+
+                    <label>Webcam view-</label>
+                    <div id="Camerarecognizer">
+
+                    </div>
+                    <br>
+                    <br>
+                    <div id="answer"></div>
+                    <br><br>
+                    <button class="btn btn-succcess" onclick="Recognise()"  >Capture Image</button>
+                    <br><br>
+                    <button class="btn btn-info" onclick="Result()">Identify Image</button>
+                    <br><br>
+                    <p style="font-size:22px;">Object:<span id="object"></span>    </p>
+                    <p style="font-size:22px;">Accuracy:<span id="accuracy"></span>    </p>
+
+
+
+
+                </b>
+            </center>
+        </div>
+    </body>
+</html>
